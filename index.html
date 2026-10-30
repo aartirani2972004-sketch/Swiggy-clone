@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive Swiggy landing page clone built with HTML5 and CSS3 (Flexbox, Grid, media queries).">
+  <meta name="author" content="Aarti Rani">
+  <meta name="theme-color" content="#FF5200">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <title>Swiggy Clone | Order Food &amp; Groceries Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HERO (header + banner + service cards) ============ -->
+  <section class="hero">
+    <header class="navbar container">
+      <a href="#" class="logo"><img src="assets/logo.svg" alt="Swiggy logo"></a>
+      <!-- CSS-only mobile menu (checkbox hack, no JavaScript) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+      <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+      <nav class="nav-links">
+        <a href="#" class="nav-link hide-md">Swiggy Corporate</a>
+        <a href="#" class="nav-link hide-md">Partner with us</a>
+        <a href="#" class="btn btn-outline">Get the App
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+        <a href="#" class="btn btn-dark">Sign in</a>
+      </nav>
+    </header>
+
+    <div class="banner">
+      <img src="assets/hero-left.svg" alt="Fresh vegetables" class="hero-art hero-art-left">
+      <img src="assets/hero-right.svg" alt="Sushi platter" class="hero-art hero-art-right">
+
+      <h1 class="hero-title">Order food &amp; groceries. Discover best restaurants. Swiggy it!</h1>
+
+      <div class="search-row">
+        <label class="field field-location">
+          <svg class="pin" width="22" height="22" viewBox="0 0 24 24"><path fill="#FF5200" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          <input type="text" placeholder="Enter your delivery location">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#02060C" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </label>
+        <label class="field field-search">
+          <input type="text" placeholder="Search for restaurant, item or more">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#676A6D" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </label>
+      </div>
+    </div>
+
+    <div class="services container">
+      <a href="#" class="service-card">
+        <div class="service-text">
+          <h2>FOOD DELIVERY</h2>
+          <p class="service-sub">FROM RESTAURANTS</p>
+          <p class="service-offer">UPTO 60% OFF</p>
+        </div>
+        <img src="assets/service-food.svg" alt="Burger and fries">
+        <span class="arrow-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="#" class="service-card">
+        <div class="service-text">
+          <h2>INSTAMART</h2>
+          <p class="service-sub">INSTANT GROCERY</p>
+          <p class="service-offer">UPTO 60% OFF</p>
+        </div>
+        <img src="assets/service-instamart.svg" alt="Grocery bag">
+        <span class="arrow-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="#" class="service-card">
+        <div class="service-text">
+          <h2>DINEOUT</h2>
+          <p class="service-sub">EAT OUT &amp; SAVE MORE</p>
+          <p class="service-offer">UPTO 50% OFF</p>
+        </div>
+        <img src="assets/service-dineout.svg" alt="Restaurant dish">
+        <span class="arrow-btn" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <main>
+    <!-- ============ FOOD CATEGORIES ============ -->
+    <section class="section container">
+      <h2 class="section-title">Order our best food options</h2>
+      <div class="food-grid">
+        <a href="#" class="food-item"><img src="assets/food/pizza.svg" alt="Pizza"><span>Pizza</span></a>
+        <a href="#" class="food-item"><img src="assets/food/burger.svg" alt="Burger"><span>Burger</span></a>
+        <a href="#" class="food-item"><img src="assets/food/biryani.svg" alt="Biryani"><span>Biryani</span></a>
+        <a href="#" class="food-item"><img src="assets/food/cake.svg" alt="Cakes"><span>Cakes</span></a>
+        <a href="#" class="food-item"><img src="assets/food/north-indian.svg" alt="North Indian"><span>North Indian</span></a>
+        <a href="#" class="food-item"><img src="assets/food/south-indian.svg" alt="South Indian"><span>South Indian</span></a>
+        <a href="#" class="food-item"><img src="assets/food/rolls.svg" alt="Rolls"><span>Rolls</span></a>
+        <a href="#" class="food-item"><img src="assets/food/noodles.svg" alt="Noodles"><span>Noodles</span></a>
+        <a href="#" class="food-item"><img src="assets/food/momos.svg" alt="Momos"><span>Momos</span></a>
+        <a href="#" class="food-item"><img src="assets/food/pasta.svg" alt="Pasta"><span>Pasta</span></a>
+        <a href="#" class="food-item"><img src="assets/food/ice-cream.svg" alt="Ice Cream"><span>Ice Cream</span></a>
+        <a href="#" class="food-item"><img src="assets/food/salad.svg" alt="Salad"><span>Salad</span></a>
+      </div>
+    </section>
+
+    <!-- ============ INSTAMART CATEGORIES ============ -->
+    <section class="section container">
+      <h2 class="section-title">Shop groceries on Instamart</h2>
+      <div class="insta-grid">
+        <a href="#" class="insta-item"><div class="insta-img"><img src="assets/instamart/vegetables.svg" alt="Fresh Vegetables"></div><span>Fresh Vegetables</span></a>
+        <a href="#" class="insta-item"><div class="insta-img"><img src="assets/instamart/fruits.svg" alt="Fresh Fruits"></div><span>Fresh Fruits</span></a>
+        <a href="#" class="insta-item"><div class="insta-img"><img src="assets/instamart/dairy.svg" alt="Dairy"></div><span>Dairy, Bread and Eggs</span></a>
+        <a href="#" class="insta-item"><div class="insta-img"><img src="assets/instamart/munchies.svg" alt="Munchies"></div><span>Munchies</span></a>
+        <a href="#" class="insta-item"><div class="insta-img"><img src="assets/instamart/cold-drinks.svg" alt="Cold Drinks"></div><span>Cold Drinks and Juices</span></a>
+        <a href="#" class="insta-item"><div class="insta-img"><img src="assets/instamart/personal-care.svg" alt="Personal Care"></div><span>Personal Care</span></a>
+        <a href="#" class="insta-item"><div class="insta-img"><img src="assets/instamart/bread-eggs.svg" alt="Bakery"></div><span>Bakery and Biscuits</span></a>
+        <a href="#" class="insta-item"><div class="insta-img"><img src="assets/instamart/atta-rice-dal.svg" alt="Atta, Rice and Dal"></div><span>Atta, Rice and Dal</span></a>
+      </div>
+    </section>
+
+    <!-- ============ CITY LINKS ============ -->
+    <section class="section container">
+      <h2 class="section-title">Cities with food delivery</h2>
+      <div class="city-grid">
+        <a href="#">Order food online in Bangalore</a><a href="#">Order food online in Delhi</a>
+        <a href="#">Order food online in Mumbai</a><a href="#">Order food online in Hyderabad</a>
+        <a href="#">Order food online in Chennai</a><a href="#">Order food online in Pune</a>
+        <a href="#">Order food online in Kolkata</a><a href="#">Order food online in Noida</a>
+        <a href="#">Order food online in Gurgaon</a><a href="#">Order food online in Jaipur</a>
+        <a href="#">Order food online in Lucknow</a><a href="#" class="city-more">Show More ⌄</a>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2 class="section-title">Cities with grocery delivery</h2>
+      <div class="city-grid">
+        <a href="#">Order grocery delivery in Bangalore</a><a href="#">Order grocery delivery in Delhi</a>
+        <a href="#">Order grocery delivery in Mumbai</a><a href="#">Order grocery delivery in Hyderabad</a>
+        <a href="#">Order grocery delivery in Chennai</a><a href="#">Order grocery delivery in Pune</a>
+        <a href="#">Order grocery delivery in Kolkata</a><a href="#">Order grocery delivery in Noida</a>
+        <a href="#">Order grocery delivery in Gurgaon</a><a href="#">Order grocery delivery in Ahmedabad</a>
+        <a href="#">Order grocery delivery in Chandigarh</a><a href="#" class="city-more">Show More ⌄</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ APP DOWNLOAD ============ -->
+  <section class="app-band">
+    <div class="container app-inner">
+      <h3>For better experience, download the Swiggy app now</h3>
+      <div class="store-badges">
+        <a href="#" class="store-badge">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><rect x="6" y="2" width="12" height="20" rx="2.5" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="18.5" r="1"/></svg>
+          <span><small>Download on the</small>App Store</span>
+        </a>
+        <a href="#" class="store-badge">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M5 3l14 9-14 9z"/></svg>
+          <span><small>GET IT ON</small>Google Play</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-orange.svg" alt="Swiggy logo">
+        <p>© 2026 Swiggy Limited</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About Us</a><a href="#">Swiggy Corporate</a><a href="#">Careers</a>
+        <a href="#">Team</a><a href="#">Swiggy One</a><a href="#">Swiggy Instamart</a>
+        <a href="#">Swiggy Dineout</a><a href="#">Minis</a><a href="#">Pyng</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact us</h4>
+        <a href="#">Help &amp; Support</a><a href="#">Partner With Us</a><a href="#">Ride With Us</a>
+        <h4 class="mt">Legal</h4>
+        <a href="#">Terms &amp; Conditions</a><a href="#">Cookie Policy</a><a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Available in:</h4>
+        <a href="#">Bangalore</a><a href="#">Gurgaon</a><a href="#">Hyderabad</a>
+        <a href="#">Delhi</a><a href="#">Mumbai</a><a href="#">Pune</a>
+        <a href="#" class="city-select">685 cities ⌄</a>
+      </div>
+      <div class="footer-col">
+        <h4>Life at Swiggy</h4>
+        <a href="#">Explore With Swiggy</a><a href="#">Swiggy News</a><a href="#">Snackables</a>
+        <h4 class="mt">Social Links</h4>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+          <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""></a>
+          <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt=""></a>
+          <a href="#" aria-label="Pinterest"><img src="assets/icons/pinterest.svg" alt=""></a>
+          <a href="#" aria-label="X"><img src="assets/icons/x.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="container submitted-by">
+      <p><strong>Submitted by:</strong> Aarti Rani</p>
+      <p><strong>Email:</strong> <a href="mailto:aartirani2972004@gmail.com">aartirani2972004@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+919258535878" id="phone">+91 92585 35878</a></p>
+      <p><strong>Built with:</strong> HTML5 &amp; CSS3 only</p>
+    </div>
+  </footer>
+
+</body>
+</html>
